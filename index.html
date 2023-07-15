@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuentas bancarias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-green-300 flex justify-center py-2.5">
+      <h1 class="font-bold text-xl">Cuentas Bancarias</h1>
+    </header>
+    <section class="w-3/4 mx-auto mt-5 border-b-2 pb-10">
+      <form>
+        <div class="pb-5">
+          <label>Nombre de la cuenta:</label>
+          <input
+            class="block w-full rounded ring-1 ring-gray-400 py-1.5 pl-2 mt-2.5"
+            id="bank-account-name"
+            placeholder="Introduce el nombre de tu cuenta"
+            type="text"
+          />
+        </div>
+        <div>
+          <label>Introduce el monto inicial:</label>
+          <input
+            class="block w-full rounded ring-1 ring-gray-400 py-1.5 pl-2 mt-2.5"
+            id="bank-account-amount"
+            placeholder="Introduce el monto inicial"
+            min="0"
+            type="number"
+          />
+        </div>
+        <button
+          class="inline-flex items-center bg-teal-700 rounded-md mt-5 px-2.5 py-1.5 text-white font-semibold"
+          id="create-bank-account"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+          Crear cuenta bancaria
+        </button>
+      </form>
+    </section>
+    <section class="w-3/4 mx-auto">
+      <div id="result">Tus cuentas bancarias</div>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
